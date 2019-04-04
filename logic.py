@@ -18,7 +18,7 @@ class MasterMind:
         for i in range(0,self.color):
             possibleColors.append(self.listOfColors[random.randint(0,length)])
 
-        print("Mögliche Farben im Spiel:")
+        print("Colors in Game:")
 
         print(bg.yellow + str(possibleColors) + bg.rs)
 
@@ -56,7 +56,7 @@ class MasterMind:
                 PossibleOptions.append(self.key[i])
 
         if black == 5:
-            print(bg.red  + "Gewonnen" + bg.rs)
+            print(bg.red  + "Won" + bg.rs)
             return True
 
 
@@ -72,9 +72,9 @@ class MasterMind:
                     i += 1
 
         print()
-        print(bg.white + fg.black + "Weiß: " + str(white) + bg.rs + fg.rs)
+        print(bg.white + fg.black + "White: " + str(white) + bg.rs + fg.rs)
 
-        print("Schwarz: " + str(black))
+        print("Black: " + str(black))
         print()
 
 
@@ -87,7 +87,7 @@ if __name__ == '__main__':
     b = 0
 
     while True:
-        print(bg.yellow + "Runde: " + str(b) + bg.rs)
+        print(bg.yellow + "Round: " + str(b) + bg.rs)
 
         ide = []
 
